@@ -11,4 +11,11 @@ These links will describe it more: (I have chosen celery executor as it is easie
 6. https://www.youtube.com/watch?v=TzVkED3y3Ig&list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&index=5&ab_channel=SKonik
 ## installion steps
 ### Main node (Docker)
+first step is to make sure that you are in the airflow-docker folder then go the cmd and run these commands
+```
+docker-compose build
+```
 
+```
+docker-compose up
+```
