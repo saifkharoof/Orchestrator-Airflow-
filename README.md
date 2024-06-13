@@ -179,3 +179,7 @@ airflow celery worker -q saif, maher, ahmed
 https://youtube.com/playlist?list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&si=7MxL8RgTlTmOShkk
 
 This is a playlist where all of the videos that you need to understand more about airflow.
+
+https://www.linkedin.com/in/marclamberti/
+
+this is a LinkedIn profile of a person who posts tips and any new changes coming to airflow in the future.
