@@ -28,3 +28,12 @@ docker-compose build
 ```
 docker-compose up
 ```
+> [!NOTE]
+> It will take time to start up and build the image it can take a few minutes.
+
+then enter this in the browser to access the web UI:
+
+```
+http://localhost:8080/
+```
+
