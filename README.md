@@ -9,12 +9,12 @@ These links will describe it more: (I have chosen celery executor as it is easie
 4. https://www.youtube.com/watch?v=3nhsEcBHz4Y&list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&index=2&ab_channel=DatawithMarc
 5. https://www.youtube.com/watch?v=NQ3fZtyXji0&list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&index=3&ab_channel=Fireship
 6. https://www.youtube.com/watch?v=TzVkED3y3Ig&list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&index=5&ab_channel=SKonik
-## Installion steps
+## Installation steps
 ### Main node (Docker)
 > [!NOTE]
-> Make you have installed docker on the master node which sould be a linux OS. https://docs.docker.com/desktop/install/rhel/
+> Make sure you have installed docker on the master node which should be a Linux OS. https://docs.docker.com/desktop/install/rhel/
 
-first step is to make sure that you are in the airflow-docker folder then go the cmd and run these commands
+The first step is to make sure that you are in the airflow-docker folder then go to the cmd and run these commands
 ![Screenshot of_dockerfile](images/docker_build.png)
 
 Under the User Airflow section line put the necessary packages to install
@@ -36,4 +36,4 @@ then enter this in the browser to access the web UI:
 ```
 http://localhost:8080/
 ```
-
+![Screenshot of_login_page](images/login.png)
