@@ -127,3 +127,53 @@ Change the directory to the home directory using the (CD) command to export the 
 ```
 airflow config list -d -V -e -s > "airflow.cfg"
 ```
+
+Apply these changes to the config file (If you have VScode press ctrl+f to find them easier):
+
+![Screenshot of_dag_folder line](images/airflow_dags_folder.png)
+
+The first thing is to modify the path of the DAG folder to be shared with the master and the WSL is in the “mnt” folder as shown in the above picture. 
+
+![Screenshot of_excutor line](images/airflow_executor.png)
+
+Then I changed the executor to the celery executor as shown in the above picture. This is the executor we need. 
+
+![Screenshot of_metadata_database line](images/airflow_metadata_database.png)
+
+Then I changed the DAG metadata database to point to the masters’ one as shown in the above picture.
+
+![Screenshot of_message_broker line](images/airflow_message_broker.png)
+
+Then changed the message broker to point to the masters’ one as shown in the above picture.
+
+![Screenshot of_celery_metadata_database line](images/airflow_celery_metadata_database.png)
+
+Then the metadata for the message broker points to the masters’ one as shown in the above picture.
+
+![Screenshot of_logs_folder line](images/airflow_logs_folder.png)
+
+Then modify the path of the Log folder to be shared with the master and the WSL is in the “mnt” folder as shown in the above picture. 
+
+> [!NOTE]
+> Make sure you have saved all of the changes.
+
+Type this command to start the metadata database:
+```
+airflow db migrate
+```
+
+> [!NOTE]
+> After any change in the config you need to restart the metadata database.
+
+to start the workers (change the name of queue saif to something unique):
+```
+airflow celery worker -q saif
+```
+to add multiple queues:
+```
+airflow celery worker -q saif, maher, ahmed
+```
+
+##additional information
+https://youtube.com/playlist?list=PL5SUlZie0EZYcqBfbeKULi5eLQ-t-LymR&si=7MxL8RgTlTmOShkk
+This is a playlist where all of the videos that you need to understand more about airflow.
